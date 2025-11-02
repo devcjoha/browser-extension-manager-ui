@@ -1,39 +1,36 @@
 import "./index.css";
 import { Route, Routes } from "react-router-dom";
-import ExtensionDetail from "./pages/ExtensionDetail";
+import ExtensionDetailView from "./pages/ExtensionDetailView";
 import Home from "./pages/Home";
 import { useState, useEffect } from "react";
 
 function App() {
- const [darkMode, setDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
     // Retorna true si el tema guardado es 'dark', o false por defecto
-    return savedTheme === 'dark';
+    return savedTheme === "dark";
   });
- 
+
   useEffect(() => {
-     const root = document.documentElement;
+    const root = document.documentElement;
     if (darkMode) {
-      root.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      root.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
-      root.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      root.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
-
 
   const handleToggle = () => {
     setDarkMode((prev) => !prev);
   };
 
-   return (
+  return (
     <>
-          {/* Lista extensiones */}
-      <div className="h-screen w-full  dark:bg-custom-900 bg-white text-black dark:text-white">
-        <div className="p-4 bg-neutral-0 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-0">
-  <p>Modo actual: {darkMode ? "Oscuro" : "Claro"}</p>
-</div>
+     {/* <main className="flex flex-col items-center w-screen h-screen dark:bg-[#09153e] bg-[#edf6fb] text-black dark:text-[#fafdff]"> */}
+     <main className="flex flex-col items-center w-screen min-h-screen dark:bg-[#09153e] bg-[#edf6fb] text-black dark:text-[#fafdff]">
+
         <Routes>
           <Route
             path="/"
@@ -45,10 +42,9 @@ function App() {
               />
             }
           />
-          <Route path="/detail/:id" element={<ExtensionDetail />} />
+          <Route path="/detail/:id" element={<ExtensionDetailView />} />
         </Routes>
-          {/* Card extensiones */}
-      </div>
+</main>
     </>
   );
 }

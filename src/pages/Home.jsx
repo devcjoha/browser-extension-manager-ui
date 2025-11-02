@@ -1,24 +1,35 @@
-import Footer from "../components/Footer";
 import Header from "../components/header";
 import ExtensionsList from "../components/ExtensionsList";
-// import { data } from "react-router-dom";
+import { useExtensions } from "../hooks/useExtensions.js";
 
-function Home({darkMode, setDarkMode, handleToggle}){
-    console.log("DARKMODE HOME", darkMode);
-    
-    return(
-        <>
-        <Header
+
+function Home({ darkMode, setDarkMode, handleToggle }) {
+  // const [items, setItems] = useState([]);
+// const [fiters, setFilters] = useState({
+//   all: true,
+//   active: false,
+//   inactive: false
+// });
+const extensions = useExtensions();
+
+
+
+  return (
+    <>
+     <section className="home-container w-screen lg:w-272 min-h-screen flex flex-col items-center p-4">
+      <Header
         darkMode={darkMode}
         setDarkMode={setDarkMode}
         handleToggle={handleToggle}
-        />
-        {darkMode? <p>ESTA EN DARK MODE</p>: <p >ESTA EN LIGHT MODE </p>}
-    <ExtensionsList>
+      />
+      <ExtensionsList
+      items={extensions}
+      >
         
-    </ExtensionsList>
-        <Footer/>
-        </>
-    )
+      </ExtensionsList>
+      
+      </section>
+    </>
+  );
 }
 export default Home;

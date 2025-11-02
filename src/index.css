@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --custom-900: hsl(227,75%,14%);
+  --custom-800: hsl(226,25%,17%);
+  --custom-700: hsl(225,23%,24%);
+  --custom-600: hsl(226,11%,37%);
+  --custom-300: hsl(0,0%,78%);
+  --custom-200: hsl(217,61%,90%);
+  --custom-100: hsl(0,0%,93%);
+  --custom-0: hsl(200,60%,99%);
+
+  --custom-Red-400: hsl(3, 86%, 64%);
+  --custom-Red-500: hsl(3, 71%, 56%);
+  --custom-Red-700: hsl(3, 77%, 44%);
+
+  --Light-Gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+  --Font-size-base: 16px;
+}
+/* :root {
+  --Custom-900: hsl(227, 75%, 14%);
+  --Custom-800: hsl(226, 25%, 17%);
+  --Custom-700: hsl(225, 23%, 24%);
+  --Custom-600: hsl(226, 11%, 37%);
+  --Custom-300: hsl(0, 0%, 78%);
+  --Custom-200: hsl(217, 61%, 90%);
+  --Custom-100: hsl(0, 0%, 93%);
+  --Custom-0: hsl(200, 60%, 99%);
+
+  --Custom-Red-400: hsl(3, 86%, 64%);
+  --Custom-Red-500: hsl(3, 71%, 56%);
+  --Custom-Red-700: hsl(3, 77%, 44%);
+
+  --Light-Gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}

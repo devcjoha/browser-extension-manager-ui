@@ -1,0 +1,170 @@
+[
+  {
+    "logo": "./assets/images/logo-devlens.svg",
+    "name": "DevLens",
+    "description": "Quickly inspect page layouts and visualize element boundaries.",
+    "isActive": true,
+    "details": {
+      "version": "1.3.0",
+      "author": "DevTools Inc.",
+      "features": ["Layout inspector", "Element boundary overlay", "Grid visualization"],
+      "permissions": ["tabs", "activeTab"],
+      "lastUpdated": "2025-09-15",
+      "website": "https://devlens.io"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-style-spy.svg",
+    "name": "StyleSpy",
+    "description": "Instantly analyze and copy CSS from any webpage element.",
+    "isActive": true,
+    "details": {
+      "version": "2.0.1",
+      "author": "CSS Ninja",
+      "features": ["Live CSS viewer", "Copy styles", "Selector tracing"],
+      "permissions": ["tabs", "webNavigation"],
+      "lastUpdated": "2025-08-22",
+      "website": "https://stylespy.dev"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-speed-boost.svg",
+    "name": "SpeedBoost",
+    "description": "Optimizes browser resource usage to accelerate page loading.",
+    "isActive": false,
+    "details": {
+      "version": "1.8.5",
+      "author": "BoostWare",
+      "features": ["Resource prioritization", "Lazy loading", "Cache optimization"],
+      "permissions": ["webRequest", "storage"],
+      "lastUpdated": "2025-07-30",
+      "website": "https://speedboost.app"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-json-wizard.svg",
+    "name": "JSONWizard",
+    "description": "Formats, validates, and prettifies JSON responses in-browser.",
+    "isActive": true,
+    "details": {
+      "version": "3.2.0",
+      "author": "DataTools",
+      "features": ["JSON formatter", "Schema validator", "Tree view"],
+      "permissions": ["storage"],
+      "lastUpdated": "2025-10-01",
+      "website": "https://jsonwizard.dev"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-tab-master-pro.svg",
+    "name": "TabMaster Pro",
+    "description": "Organizes browser tabs into groups and sessions.",
+    "isActive": true,
+    "details": {
+      "version": "4.0.0",
+      "author": "TabFlow",
+      "features": ["Tab grouping", "Session restore", "Auto-close inactive tabs"],
+      "permissions": ["tabs", "storage"],
+      "lastUpdated": "2025-09-10",
+      "website": "https://tabmaster.pro"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-viewport-buddy.svg",
+    "name": "ViewportBuddy",
+    "description": "Simulates various screen resolutions directly within the browser.",
+    "isActive": false,
+    "details": {
+      "version": "1.1.2",
+      "author": "Responsive Labs",
+      "features": ["Resolution presets", "Custom viewport sizes", "Device emulation"],
+      "permissions": ["activeTab"],
+      "lastUpdated": "2025-08-05",
+      "website": "https://viewportbuddy.io"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-markup-notes.svg",
+    "name": "Markup Notes",
+    "description": "Enables annotation and notes directly onto webpages for collaborative debugging.",
+    "isActive": true,
+    "details": {
+      "version": "2.5.3",
+      "author": "DebugTogether",
+      "features": ["Webpage annotation", "Note sharing", "Team comments"],
+      "permissions": ["tabs", "storage"],
+      "lastUpdated": "2025-09-25",
+      "website": "https://markupnotes.dev"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-grid-guides.svg",
+    "name": "GridGuides",
+    "description": "Overlay customizable grids and alignment guides on any webpage.",
+    "isActive": false,
+    "details": {
+      "version": "1.0.9",
+      "author": "PixelPerfect",
+      "features": ["Custom grids", "Alignment tools", "Snap-to-grid"],
+      "permissions": ["activeTab"],
+      "lastUpdated": "2025-07-18",
+      "website": "https://gridguides.io"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-palette-picker.svg",
+    "name": "Palette Picker",
+    "description": "Instantly extracts color palettes from any webpage.",
+    "isActive": true,
+    "details": {
+      "version": "2.2.1",
+      "author": "ColorCraft",
+      "features": ["Palette extraction", "Color history", "Export to HEX/RGB"],
+      "permissions": ["tabs", "storage"],
+      "lastUpdated": "2025-09-05",
+      "website": "https://palettepicker.dev"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-link-checker.svg",
+    "name": "LinkChecker",
+    "description": "Scans and highlights broken links on any page.",
+    "isActive": true,
+    "details": {
+      "version": "3.0.0",
+      "author": "WebAudit",
+      "features": ["Broken link detection", "Highlight mode", "Export report"],
+      "permissions": ["webRequest", "tabs"],
+      "lastUpdated": "2025-10-10",
+      "website": "https://linkchecker.io"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-dom-snapshot.svg",
+    "name": "DOM Snapshot",
+    "description": "Capture and export DOM structures quickly.",
+    "isActive": false,
+    "details": {
+      "version": "1.4.7",
+      "author": "DOMTools",
+      "features": ["DOM capture", "Export to JSON", "Snapshot history"],
+      "permissions": ["activeTab", "storage"],
+      "lastUpdated": "2025-08-28",
+      "website": "https://domsnapshot.dev"
+    }
+  },
+  {
+    "logo": "./assets/images/logo-console-plus.svg",
+    "name": "ConsolePlus",
+    "description": "Enhanced developer console with advanced filtering and logging.",
+    "isActive": true,
+    "details": {
+      "version": "2.9.0",
+      "author": "DevConsoleX",
+      "features": ["Log filtering", "Custom log levels", "Console themes"],
+      "permissions": ["tabs", "storage"],
+      "lastUpdated": "2025-09-20",
+      "website": "https://consoleplus.dev"
+    }
+  }
+]

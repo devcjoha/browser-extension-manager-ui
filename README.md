@@ -22,12 +22,11 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 
 Users should be able to:
 
-- Toggle extensions between active and inactive states
-- Filter active and inactive extensions
-- Remove extensions from the list
-- Select their color theme
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+
+- Select light/dark theme.
+- Toggle to enable or disable extensions.
+- Filter extensions by activation.
+- Detailed extensions, expanding the data.json file.
 
 
 ### Screenshot
@@ -55,12 +54,12 @@ Users should be able to:
 
 ## 🚀 Live Deploys
 
-[![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-blue?logo=github)](https://devcjoha.github.io/reactjs-conference-ticket-generator/)
-[![Deploy on Vercel](https://img.shields.io/badge/Live-Vercel-black?logo=vercel)](https://reactjs-conference-ticket-generator.vercel.app/)
+[![GitHub Pages]()
+[![Deploy on Vercel]()
 
-- Solution URL: [code](https://github.com/devcjoha/reactjs-conference-ticket-generator)
-- Live Site URL: [Deploy Vercel](https://reactjs-conference-ticket-generator.vercel.app/)
-- Live Site URL: [Deploy-Github-Pages](https://devcjoha.github.io/reactjs-conference-ticket-generator/)
+- Solution URL: [code]()
+- Live Site URL: [Deploy Vercel]()
+- Live Site URL: [Deploy-Github-Pages]()
 
 
 ## My process
@@ -84,12 +83,9 @@ Users should be able to:
 - React (component-based architecture).
 - Vite (development and packaging).
 - Functional components and hooks (useState, useEffect).
-- Tailwind custom properties.
+- Tailwind custom propertie, theme dark/light.
 - Responsive design.
-- Select light/dark theme.
-- Toggle to enable or disable extensions.
-- Filter extensions by activation.
-- Detailed extensions, expanding the data.json file.
+- React-router-dom
 
 
 ### 👩🏻‍🦱 What I learned
@@ -109,7 +105,7 @@ Users should be able to:
 
 - **Local**: Use `/` as the base for routes.
 
-- **Production (GitHub Pages)**: Use `/reactjs-conference-ticket-generator/` as the base.
+- **Production (GitHub Pages)**: Use `/` as the base.
 
 ### ⚙️ Scripts disponibles
 
@@ -139,7 +135,7 @@ npm run preview
 React Router requires the basename to match the site's base URL. This logic prevents errors such as:
 
 ```js 
-<Router basename="/reactjs-conference-ticket-generator"> is not able to match the URL "/"
+<Router basename="/"> is not able to match the URL "/"
 ```
 Thanks to this configuration, you don't need to modify your code every time you change environments.
 
@@ -170,7 +166,7 @@ GITHUB_PAGES=false
 For production (GitHub Pages):
 ```
 ```env
-VITE_BASE_URL=/reactjs-conference-ticket-generator/
+VITE_BASE_URL=/
 GITHUB_PAGES=true
 ```
 Use the scripts defined in package.json:

@@ -33,17 +33,21 @@ Users should be able to:
 ### Screenshot
 
 <p align="center">
-  <img src="./public/" width="500" alt="" />
+  <img src="./public/solution-desktop-light.jpg" width="300" alt="desktopLight" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/" width="300" alt="" />
+  <img src="./public/solution-desktop-dark.jpg" width="300" alt="desktopdark" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/" width="300" alt="" />
+  <img src="./public/detail-light.jpg" width="300" alt="detaillight" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/" width="600" alt="" />
+  <img src="./public/detail-dark.jpg" width="300" alt="detaildark" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/" width="300" alt="" />
+  <img src="./public/hover-focus-light.jpg" width="300" alt="focuslight" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./public/" width="300" alt="" />
+  <img src="./public/hover-focus-dark.jpg" width="300" alt="focusdark" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./public/solution-mobile-light.jpg" width="300" alt="mobilelight" />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./public/solution-mobile-dark.jpg" width="300" alt="mobiledark" />
 </p>
 
 ## Author

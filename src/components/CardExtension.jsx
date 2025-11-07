@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 
-function CardExtension({ id, logo, name, description, isActive }) {
-  const hadleToggleIsActive = (e) => {
-    e.preventDefault();
-    !isActive ? isActive : !isActive;
+function CardExtension({ id, logo, name, description, isActive, onToggle, handleRemove }) {
+const confirmRemove = ()=>{
+  window.confirm("Are you sure you want to remove this extension?");
+  if(confirmRemove){
+    handleRemove(id)
   };
-
-
+};
   return (
     <>
-      <div className="card-container flex flex-col place-content-between w-85 h-45 p-4 border border-[#d6e2f5] dark:border-[#545969] rounded-xl   bg-[#fcfdff] dark:bg-[#212636] shadow-lg "
-      >
+      {/* CARD EXT */}
+      <div className="card-container flex flex-col place-content-between w-85 h-45 p-4 border border-[#d6e2f5] dark:border-[#545969] rounded-xl bg-[#fcfdff] dark:bg-[#212636] shadow-lg 
+      transition-transform duration-300 ease-in-out lg:hover:scale-105 lg:hover:shadow-lg">
         <Link to={`/detail/${id}`} state={id} className="block">
           {/* CARD ICON TEXT */}
           <div className="card-icon-text-container flex flex-row">
@@ -30,30 +31,32 @@ function CardExtension({ id, logo, name, description, isActive }) {
           {/* Button Remove */}
           <button
             type="button"
-            className="button-remove flex w-19 h-8 items-center justify-center text-[.8rem] p-1 shadow-md border border-[#d6e2f5] dark:border-[#545969] rounded-2xl dark:hover:bg-[#de473f] hover:bg-[#c7221a] hover:text-white dark:hover:text-black dark:hover:border-transparent cursor-pointer"
+            onClick={confirmRemove}
+            className="button-remove flex w-19 h-8 items-center justify-center text-[.8rem] p-1 shadow-md border border-[#d6e2f5] dark:border-[#545969] rounded-2xl dark:hover:bg-[#de473f] hover:bg-[#c7221a] hover:text-white hover:font-bold dark:hover:text-black dark:hover:border-transparent cursor-pointer"
           >
             Remove
           </button>
-
-          {/* Toggle */}
+          {/* Toggle isActive: true/false */}
           <div className="toggle-card relative inline-block w-8 h-4 pt-1 not-first:select-none transition duration-200 ease-in">
             <div className="toggle-active-card relative inline-block w-8 h-4">
               <input
                 checked={isActive}
-                id="toggle-input"
+                id={id}
                 type="checkbox"
-                className="peer appearance-none w-8 h-4 bg-slate-100 dark:bg-[#545969] rounded-full checked:bg-[#c7221a] cursor-pointer transition-colors duration-300"
-                onChange={hadleToggleIsActive}
+                onChange={(e)=> onToggle(id, e.target.checked)}
+                name={id}
+                className="peer appearance-none w-8 h-4 bg-[#c7c7c7] dark:bg-[#545969] rounded-full checked:bg-[#c7221a] cursor-pointer transition-colors duration-300"
               />
+
               <label
-                htmlFor="toggle-swich"
+                htmlFor={id}
+                name={id}
                 className="absolute top-0 left-0 w-4 h-4 mt-[.1rem] bg-white rounded-full border border-slate-300 shadow-sm transition-transform duration-300 peer-checked:translate-x-4 peer-checked:border-[#c7221a] cursor-pointer"
               ></label>
             </div>
           </div>
         </div>
       </div>
-   
     </>
   );
 }

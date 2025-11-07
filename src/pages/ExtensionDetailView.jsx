@@ -16,7 +16,6 @@ function ExtensionDetailView({ items }) {
 
   return (
     <>
-   
         <CardExtensionDetail
           key={extension.id}
           id={extension.id}

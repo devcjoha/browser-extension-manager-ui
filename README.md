@@ -4,7 +4,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 
 ## Table of contents
 
-- [Frontend Mentor - Conference ticket generator solution](#frontend-mentor---conference-ticket-generator-solution)
+- [Browser extensions manager UI challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp).
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -24,9 +24,10 @@ Users should be able to:
 
 
 - Select light/dark theme.
-- Toggle to enable or disable extensions.
-- Filter extensions by activation.
-- Detailed extensions, expanding the data.json file.
+- Enable/disable extensions.
+- Remove extensions.
+- Filter extensions: All, Active, Inactive.
+- View a modal with detailed extension information by expanding the data.json file.
 
 
 ### Screenshot
@@ -85,21 +86,30 @@ Users should be able to:
 - Functional components and hooks (useState, useEffect).
 - Tailwind custom propertie, theme dark/light.
 - Responsive design.
-- React-router-dom
+- React-router-dom(modal).
 
 
 ### 👩🏻‍🦱 What I learned
-
+* In this project, I worked with Tailwind CSS inline, applying utility classes directly in JSX to build a clear, responsive, and functional interface. I learned to:
+* Implement light/dark mode using classes like dark:bg-gray-900 and dark:text-white.
+* Use React hooks (useState, useEffect) to handle filters, toggles, and theme persistence.
+* Separate the original state from the filtered state to maintain data integrity.
+* Modularize functional components and apply conditional styling with Tailwind.
+* Configure dynamic deployments with Vite, GitHub Pages, and Vercel, using environment variables to manage routes and environments.
+* Also, although I didn't implement a tokenized layout system in this application, I'll learn how to build one and have it ready to apply in my next application.
 
 
 ### 💥 Continued development
-
+* This project gave me clarity on how to scale my future developments. For my next app, I plan to:
+* Implement a semantic design system with CSS tokens, variants, and clear documentation.
+* Modularize styles in files like theme.css, components.css, and utilities.css.
+* Create a visual guide for validating themes, components, and variants.
+* Consolidate a starter kit with dark mode, reusable classes, and a scalable architecture.
+* This project provided a solid foundation for understanding how Tailwind can coexist with more advanced systems and how to migrate to them without breaking what already works.
 
 
 
 ## 🚀 Deployment & Environment Setup
-
-
 
 ### 🧪 Entornos
 

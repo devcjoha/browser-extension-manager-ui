@@ -1,65 +1,59 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* @theme{
-  --custom-neutral-900: #09153e;
-  --custom-neutral-800: #212636;
-  --custom-neutral-700: #2f364b;
-  --custom-neutral-600: #545969;
-  --custom-neutral-300: #c7c7c7;
-  --custom-neutral-200: #d6e2f5;
-  --custom-neutral-100: #ededed;
-  --custom-neutral-0: #fafdff;
-
-  --custom-red-400: #f25c54;
-  --custom-red-500: #de473f;
-  --custom-red-700: #c7221a;
-
-  --Light-Gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
-  --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
-
-  --Font-size-base: 16px;
-
-  --font-sans: "Noto Sans", sans-serif
-
-  --breakpoint-sm: 375px;
-  --breakpoint-lg: 1440px;
-} */
 :root {
+  /*Light Theme*/
+  --surface-bg:#edf6fb;
+  --light-bg-card-header: #fcfdff:
+  --light-border-card: #d6e2f5;
+  
+  /*Dark Theme*/
+  --dark-bg-home:#09153e;
+  --dark-bg-card-header:#212636;
+  --dark-text-description-card:#9fa2ad;
+  --dark-border-button-card:#545969;
+    
+  /*Neutrales*/
   --custom-neutral-900: #09153e;
   --custom-neutral-800: #212636;/*DARK bg header, card*/
   --custom-neutral-700: #2f364b;
   --custom-neutral-600: #545969;/*DARK border card, button*/
-  --custom-neutral-500: #9fa2ad;/*DARK text-card*/
+  --custom-neutral-500: #bfc1c9;/*DARK text-card*/
   --custom-neutral-300: #c7c7c7;
   --custom-neutral-200: #d6e2f5;/*LIGHT border card*/
   --custom-neutral-100: #ededed;
   --custom-neutral-0: #fafdff;
-
-  --custom-bg-app: #c6c6c3;
-  --custom-bg-cards-light: #fcfdff;
-  --custom-hover-light: #c6c6c3;
+  
+  /*Backgrounds*/
   --custom-bg-wrapper: #5459698f;
- 
-
+  
+  /*Actions*/
+  --custom-hover-light: #c6c6c3;
+  
+  /*Reds*/
   --custom-red-400: #f25c54;
   --custom-red-500: #de473f;
   --custom-red-700: #c7221a;
-
+  
+  /*Gradients*/
   --Light-Gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
   --Dark-Gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+  
+  /*Typography*/
+  --light-text: #09153e;
+  --dark-text: #fafdff;
 
   --Font-size-base: 16px;
-
   --font-sans: "Noto Sans", sans-serif;
-
+  
   --breakpoint-sm: 375px;
   --breakpoint-lg: 1440px;
 }
-
 body {
   margin: 0;
-  max-width: 100vw;
-  min-height: 100vh;
+  min-height: 345px; 
   font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+

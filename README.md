@@ -55,12 +55,8 @@ Users should be able to:
 
 ## 🚀 Live Deploys
 
-[![GitHub Pages]()
-[![Deploy on Vercel]()
-
-- Solution URL: [code]()
-- Live Site URL: [Deploy Vercel]()
-- Live Site URL: [Deploy-Github-Pages]()
+- Solution URL: [code](https://github.com/devcjoha/browser-extension-manager-ui/tree/gh-pages/assets)
+- Live Site URL: [Deploy-Github-Pages](https://devcjoha.github.io/browser-extension-manager-ui/)
 
 
 ## My process
@@ -132,13 +128,6 @@ npm run build:gh
 # Vista previa del build
 npm run preview
 ```
-### 📦 Variables de entorno
-
-- **The basename** is dynamically configured using the ```GITHUB_PAGES``` variable.
-
-- **In local development:** you don't need to define anything.
-
-- **In production:** the ```build:gh``` script automatically defines ```GITHUB_PAGES=true```.
 
 ### 🧠 Why this configuration?
 
@@ -149,41 +138,17 @@ React Router requires the basename to match the site's base URL. This logic prev
 ```
 Thanks to this configuration, you don't need to modify your code every time you change environments.
 
-### 🧩 Environment Configuration
-This project uses environment variables to manage paths and dynamic deployments. To maintain security and avoid conflicts, the actual .env files are excluded from the repository using .gitignore.
+## Asset Handling for GitHub Pages
+* To ensure logos and images load correctly in production:
+* All SVG logos are stored in public/assets/.
+* Each extension in data.json uses only the filename for its logo, like "logo-devlens.svg".
+* In the hook, image paths are constructed using:
 
-📄 Example File
-An .env.example file is included as a template:
-
-```env
-# .env.example
-VITE_BASE_URL=/
-GITHUB_PAGES=false
+```js
+logo: `${import.meta.env.BASE_URL}assets/${item.logo}`;
 ```
-🛠️ How to Use It?
+This ensures compatibility with GitHub Pages, which serves your app from a subpath like /browser-extension-manager-ui/. Using import.meta.env.BASE_URL dynamically adjusts the asset path based on the deployment environment.
 
-
-Copy the example file:
-
-```bash
-cp .env.example .env
-
-```
-Adjust the values ​​according to your environment:
-```env
-VITE_BASE_URL=/
-GITHUB_PAGES=false
-For production (GitHub Pages):
-```
-```env
-VITE_BASE_URL=/
-GITHUB_PAGES=true
-```
-Use the scripts defined in package.json:
-```bash
-npm run dev        # desarrollo local
-npm run build:gh   # build para GitHub Pages
-```
 
 ## Author
 

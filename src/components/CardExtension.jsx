@@ -7,6 +7,8 @@ const confirmRemove = ()=>{
     handleRemove(id)
   };
 };
+<img src={logo} alt="Logo" />
+
   return (
     <>
       {/* CARD EXT */}
@@ -16,7 +18,7 @@ const confirmRemove = ()=>{
           {/* CARD ICON TEXT */}
           <div className="card-icon-text-container flex flex-row">
             <div className="card-icon-container w-14 h-14 mr-4 border-transparentrounded-lg">
-              <img src={`/${logo}`} alt="icon" />
+              <img src={logo} alt={name} />
             </div>
             <div className="card-text-container">
               <h2 className="font-bold text-[1.1rem]">{name}</h2>

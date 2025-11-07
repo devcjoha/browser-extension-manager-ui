@@ -21,9 +21,9 @@ const spanStyle = "text-[#9fa2ad] font-normal";
           className="card-detail-container flex flex-col  dark:text-[#9fa2ad]"
           id={id}
         >
-          <div className="flex items-center justify-center">
+          <div className="logo-detail flex items-center justify-center">
             <img
-              src={`/${logo}`}
+              src={logo}
               alt="logo"
               className="img-card-detail flex w-25 h-25"
             />
